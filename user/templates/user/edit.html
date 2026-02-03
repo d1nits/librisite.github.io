@@ -1,0 +1,14 @@
+{% block content %}
+    <h1>{% trans "Редагувати акаунт" %}</h1>
+
+    <p>{% trans "Ви можете редагувати свій акаунт, використовуючи наступну форму:" %}</p>
+
+    <form action="." method="post" enctype="multipart/form-data">
+        {{ user_form.as_p }}
+        {{ profile_form.as_p }}
+        {% csrf_token %}
+        <p>
+            <input type="submit" value="{% trans 'Зберегти зміни' %}">
+        </p>
+    </form>
+{% endblock %}

@@ -1,0 +1,90 @@
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ thread.title }}</title>
+</head>
+<body>
+    <div class="container">
+        <div class="thread-details">
+            <h1>{{ thread.title }}</h1>
+
+            <p>{{ thread.content }}</p>
+
+            <p>
+                <strong>{% trans "Автор" %}</strong>
+                {{ thread.author.username }}
+                {% trans "від" %}
+                {{ thread.created_at }}
+            </p>
+
+            {% if thread.author == user %}
+                <a href="{% url 'forum:thread_edit' thread.id %}">
+                    {% trans "Редагувати" %}
+                </a>
+            {% endif %}
+        </div>
+
+        <div id="comments-section">
+            {% for comment in comments %}
+                <div class="comment-item" id="comment-{{ comment.id }}">
+                    <div class="comment-header">
+                        <p>
+                            <strong>{{ comment.author.username }}</strong>
+                            {% trans "прокоментував(ла)" %}
+                            {{ comment.created_at }}
+                        </p>
+                    </div>
+
+                    <div class="comment-body">
+                        <p>{{ comment.content }}</p>
+                    </div>
+
+                    <div class="reply-section">
+                        {% for reply in comment.replies.all %}
+                            <div class="reply-item" id="reply-{{ reply.id }}">
+                                <p>
+                                    <strong>{{ reply.author.username }}</strong>
+                                    {% trans "відповів(ла)" %}
+                                    {{ reply.created_at }}
+                                </p>
+                                <p>{{ reply.content }}</p>
+                            </div>
+                        {% endfor %}
+
+                        <form method="POST"
+                              class="reply-form"
+                              data-parent-comment-id="{{ comment.id }}">
+                            {% csrf_token %}
+
+                            <textarea name="content"
+                                      placeholder="{% trans 'Напишіть відповідь…' %}"></textarea>
+
+                            <input type="hidden"
+                                   name="parent_comment"
+                                   value="{{ comment.id }}">
+
+                            <button type="submit">
+                                {% trans "Відповісти" %}
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <form method="POST" class="add-comment-form">
+            {% csrf_token %}
+
+            {{ form.as_p }}
+
+            <button type="submit">
+                {% trans "Додати коментар" %}
+            </button>
+        </form>
+    </div>
+</body>
+</html>

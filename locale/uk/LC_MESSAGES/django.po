@@ -1,0 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-03 13:16+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
+"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
+"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
+"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+#: .\forum\templates\forum\thread_create.html:11
+#: .\forum\templates\forum\thread_create.html:20
+msgid "Створити нову гілку форуму"
+msgstr ""
+
+#: .\forum\templates\forum\thread_create.html:25
+msgid "Форум"
+msgstr ""
+
+#: .\forum\templates\forum\thread_create.html:38
+msgid "Створити гілку"
+msgstr ""
+
+#: .\forum\templates\forum\thread_detail.html:18
+msgid "Автор"
+msgstr ""
+
+#: .\forum\templates\forum\thread_detail.html:20
+#: .\forum\templates\forum\thread_list.html:37
+msgid "від"
+msgstr ""
+
+#: .\forum\templates\forum\thread_detail.html:26
+msgid "Редагувати"
+msgstr ""
+
+#: .\forum\templates\forum\thread_detail.html:37
+msgid "прокоментував(ла)"
+msgstr ""
+
+#: .\forum\templates\forum\thread_detail.html:51
+msgid "відповів(ла)"
+msgstr ""
+
+#: .\forum\templates\forum\thread_detail.html:64
+msgid "Напишіть відповідь…"
+msgstr ""
+
+#: .\forum\templates\forum\thread_detail.html:71
+msgid "Відповісти"
+msgstr ""
+
+#: .\forum\templates\forum\thread_detail.html:85
+msgid "Додати коментар"
+msgstr ""
+
+#: .\forum\templates\forum\thread_edit.html:4
+msgid "Редагувати гілку"
+msgstr ""
+
+#: .\forum\templates\forum\thread_edit.html:13
+msgid "Зберегти"
+msgstr ""
+
+#: .\forum\templates\forum\thread_edit.html:20
+msgid "Назад"
+msgstr ""
+
+#: .\forum\templates\forum\thread_list.html:10
+#: .\forum\templates\forum\thread_list.html:17
+msgid "Гілки форуму"
+msgstr ""
+
+#: .\forum\templates\forum\thread_list.html:20
+msgid "Створити нову гілку"
+msgstr ""
+
+#: .\forum\templates\forum\thread_list.html:35
+msgid "Створено"
+msgstr ""
+
+#: .\forum\templates\forum\thread_list.html:49
+#, python-format
+msgid ""
+"\n"
+"                        На форумі немає гілок.\n"
+"                        <a href=\"%(url)s\">Створіть першу гілку!</a>\n"
+"                    "
+msgstr ""
+
+#: .\user\templates\user\dashboard.html:3
+#: .\user\templates\user\dashboard.html:6
+msgid "Панель управління"
+msgstr ""
+
+#: .\user\templates\user\dashboard.html:9
+msgid ""
+"\n"
+"        Ласкаво просимо до вашої панелі управління. Ви можете\n"
+"        "
+msgstr ""
+
+#: .\user\templates\user\dashboard.html:12
+msgid "редагувати свій профіль"
+msgstr ""
+
+#: .\user\templates\user\dashboard.html:13
+msgid "або"
+msgstr ""
+
+#: .\user\templates\user\dashboard.html:14
+msgid "змінити пароль"
+msgstr ""
+
+#: .\user\templates\user\edit.html:2
+msgid "Редагувати акаунт"
+msgstr ""
+
+#: .\user\templates\user\edit.html:4
+msgid "Ви можете редагувати свій акаунт, використовуючи наступну форму:"
+msgstr ""
+
+#: .\user\templates\user\edit.html:11
+msgid "Зберегти зміни"
+msgstr ""
+
+#: .\user\templates\user\login.html:3 .\user\templates\user\login.html:6
+#: .\user\templates\user\login_prompt.html:6
+#: .\user\templates\user\register.html:7
+msgid "Вхід"
+msgstr ""
+
+#: .\user\templates\user\login.html:9
+msgid ""
+"\n"
+"        Будь ласка, використовуйте форму нижче для входу.\n"
+"        Якщо у вас ще немає акаунту,\n"
+"        "
+msgstr ""
+
+#: .\user\templates\user\login.html:13
+msgid "зареєструйтесь тут"
+msgstr ""
+
+#: .\user\templates\user\login.html:20
+#: .\user\templates\user\login_prompt.html:13
+#: .\user\templates\user\register.html:23
+msgid "Увійти"
+msgstr ""
+
+#: .\user\templates\user\login_prompt.html:10
+msgid "Будь ласка, увійдіть до системи"
+msgstr ""
+
+#: .\user\templates\user\login_prompt.html:11
+msgid "Щоб отримати доступ ви повинні увійти до системи"
+msgstr ""
+
+#: .\user\templates\user\login_prompt.html:15
+msgid "Ще не зареєстровані?"
+msgstr ""
+
+#: .\user\templates\user\login_prompt.html:16
+msgid "Створіть акаунт щоб розпочати:"
+msgstr ""
+
+#: .\user\templates\user\login_prompt.html:18
+msgid "Зареєструватися"
+msgstr ""
+
+#: .\user\templates\user\register_done.html:3
+msgid "Welcome"
+msgstr ""
+
+#: .\user\templates\user\register_done.html:7
+#, python-format
+msgid ""
+"\n"
+"        Раді вас вітати %(name)s!\n"
+"        "
+msgstr ""
+
+#: .\user\templates\user\register_done.html:13
+msgid ""
+"\n"
+"        Ваш акаунт було успішно створено\n"
+"        "
+msgstr ""
+
+#: .\user\templates\user\register_done.html:16
+msgid "увійдіть"
+msgstr ""

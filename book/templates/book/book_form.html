@@ -1,0 +1,33 @@
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>{% trans "Додати книгу" %}</title>
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1>{% trans "Додати книгу" %}</h1>
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit" class="btn btn-primary">
+            {% trans "Зберегти" %}
+        </button>
+
+        <a href="{% url 'review_create' %}" class="btn btn-secondary">
+            {% trans "Назад" %}
+        </a>
+    </form>
+</div>
+
+</body>
+</html>

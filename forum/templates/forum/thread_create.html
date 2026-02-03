@@ -1,0 +1,44 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        {% trans "Створити нову гілку форуму" %}
+    </title>
+
+    <link rel="stylesheet" href="{% static 'forum/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>
+                {% trans "Створити нову гілку форуму" %}
+            </h1>
+
+            <li>
+                <a href="{% url 'forum:thread_list' %}">
+                    {% trans "Форум" %}
+                    <span class="underline"></span>
+                </a>
+            </li>
+        </header>
+
+        <div class="form-container">
+            <form method="POST">
+                {% csrf_token %}
+
+                {{ form.as_p }}
+
+                <button type="submit">
+                    {% trans "Створити гілку" %}
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

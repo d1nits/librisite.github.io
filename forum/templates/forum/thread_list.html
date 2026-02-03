@@ -1,0 +1,58 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% trans "Гілки форуму" %}</title>
+
+    <link rel="stylesheet" href="{% static 'forum/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>{% trans "Гілки форуму" %}</h1>
+
+            <a href="{% url 'forum:thread_create' %}" class="create-thread-btn">
+                {% trans "Створити нову гілку" %}
+            </a>
+        </header>
+
+        <div class="thread-list">
+            {% if threads %}
+                {% for thread in threads %}
+                    <div class="thread-card">
+                        <h2>
+                            <a href="{% url 'forum:thread_detail' thread.id %}">
+                                {{ thread.title }}
+                            </a>
+                        </h2>
+
+                        <p>
+                            <strong>{% trans "Створено" %}:</strong>
+                            {{ thread.author }}
+                            {% trans "від" %}
+                            {{ thread.created_at|date:"d M Y H:i" }}
+                        </p>
+
+                        <p>
+                            {{ thread.content|truncatewords:20 }}
+                        </p>
+                    </div>
+                {% endfor %}
+            {% else %}
+                {% url 'forum:thread_create' as create_url %}
+                <p>
+                    {% blocktrans with url=create_url %}
+                        На форумі немає гілок.
+                        <a href="{{ url }}">Створіть першу гілку!</a>
+                    {% endblocktrans %}
+                </p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

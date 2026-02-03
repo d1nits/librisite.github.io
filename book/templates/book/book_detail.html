@@ -1,0 +1,43 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ book.title }}</title>
+</head>
+<body>
+
+<h1>{{ book.title }}</h1>
+<p>{% trans "Автор" %}: {{ book.author }}</p>
+
+{% if book.description %}
+    <p>{{ book.description }}</p>
+{% endif %}
+
+<hr>
+
+<h3>{% trans "Рецензії" %}</h3>
+
+{% for review in reviews %}
+    <div>
+        <h4>
+            <a href="{% url 'review_detail' review.pk %}">
+                {{ review.title }}
+            </a>
+        </h4>
+
+        <p>{{ review.content|truncatechars:150 }}</p>
+        <small>⭐ {{ review.rating }}</small>
+    </div>
+{% empty %}
+    <p>{% trans "Рецензій ще немає" %}</p>
+{% endfor %}
+
+{% if user.is_authenticated %}
+    <a href="{% url 'review_create' book.slug %}">
+        {% trans "Написати рецензію" %}
+    </a>
+{% endif %}
+
+</body>
+</html>

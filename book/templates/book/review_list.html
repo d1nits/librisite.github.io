@@ -1,0 +1,140 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>{% trans "Рецензії" %}</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f6f6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4c2400;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .create-review {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .create-review a {
+            background-color: #4c2400;
+            color: #fff;
+            padding: 0.8rem 1.4rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .create-review a:hover {
+            background-color: #663300;
+        }
+
+        .posts {
+            max-width: 900px;
+            margin: 0 auto 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .posts__item {
+            background: #fff;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            padding-bottom: 1rem;
+        }
+
+        .posts__item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .posts__item h3 {
+            margin: 0.5rem 1rem;
+        }
+
+        .posts__item p {
+            margin: 0.5rem 1rem;
+            color: #444;
+        }
+
+        .posts__item a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .book-link {
+            display: block;
+            margin: 0.5rem 1rem;
+            font-size: 0.9rem;
+            color: #4000ff;
+        }
+
+        .empty {
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>{% trans "Усі рецензії" %}</h1>
+</header>
+
+{% if user.is_authenticated %}
+    <div class="create-review">
+        <a href="{% url 'review_create' %}">
+            {% trans "Написати рецензію" %}
+        </a>
+    </div>
+{% endif %}
+
+<main>
+    <div class="posts">
+
+        {% for review in reviews %}
+            <div class="posts__item">
+
+                <a href="{% url 'review_detail' review.pk %}">
+                    {% if review.image %}
+                        <img src="{{ review.image.url }}" alt="{{ review.title }}">
+                    {% else %}
+                        <img src="{% static 'book/images/placeholder.jpg' %}" alt="{% trans 'No image' %}">
+                    {% endif %}
+
+                    <h3>{{ review.title }}</h3>
+                    <p>{{ review.content|truncatewords:20 }}</p>
+                </a>
+
+                {% if review.book %}
+                    <a class="book-link"
+                       href="{% url 'book_detail' slug=review.book.slug %}">
+                        {{ review.book.title }}
+                    </a>
+                {% endif %}
+
+            </div>
+        {% empty %}
+            <p class="empty">{% trans "Рецензій поки немає" %}</p>
+        {% endfor %}
+
+    </div>
+</main>
+
+</body>
+</html>

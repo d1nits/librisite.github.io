@@ -1,0 +1,36 @@
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Filtered Posts</h1>
+                <div class="list-group">
+                    {% for post in posts %}
+                        <div class="image-container"> 
+                            <a href="{% url 'review_detail' post.pk %}" class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">{{ post.title }}</h5>
+                                    <small>{{ post.created_at }}</small>
+                                </div>
+                                <p class="mb-1">{{ post.content|slice:":100" }}...</p>
+                                <a href="{% url 'review_delete' post.pk %}" class="btn btn-danger btn-sm">Delete</a>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+<style>
+    .list-group {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .image-container {
+        width: calc(20% - 10px); 
+        margin: 5px; 
+    }
+</style>

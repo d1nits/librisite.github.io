@@ -1,0 +1,23 @@
+{% load i18n %}
+
+{% block title %}{% trans "Вхід" %}{% endblock %}
+
+{% block content %}
+    <h1>{% trans "Вхід" %}</h1>
+
+    <p>
+        {% blocktrans %}
+        Будь ласка, використовуйте форму нижче для входу.
+        Якщо у вас ще немає акаунту,
+        {% endblocktrans %}
+        <a href="{% url "register" %}">{% trans "зареєструйтесь тут" %}</a>
+    </p>
+
+    <form action="." method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <p>
+            <input type="submit" value="{% trans 'Увійти' %}">
+        </p>
+    </form>
+{% endblock %}

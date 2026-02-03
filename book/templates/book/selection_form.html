@@ -1,0 +1,55 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+
+{% block content %}
+<h2>{% trans "Створити / редагувати добірку" %}</h2>
+
+<form method="post">
+    {% csrf_token %}
+
+    <div>
+        <label for="{{ form.name.id_for_label }}">
+            {{ form.name.label }}
+        </label><br>
+        {{ form.name }}
+        {% if form.name.errors %}
+            <div class="error">
+                {{ form.name.errors }}
+            </div>
+        {% endif %}
+    </div>
+
+    <br>
+
+    <div>
+        <label for="{{ form.description.id_for_label }}">
+            {{ form.description.label }}
+        </label><br>
+        {{ form.description }}
+        {% if form.description.errors %}
+            <div class="error">
+                {{ form.description.errors }}
+            </div>
+        {% endif %}
+    </div>
+
+    <br>
+
+    <div>
+        <p><strong>{{ form.books.label }}</strong></p>
+        {{ form.books }}
+        {% if form.books.errors %}
+            <div class="error">
+                {{ form.books.errors }}
+            </div>
+        {% endif %}
+    </div>
+
+    <br>
+
+    <button type="submit">{% trans "Зберегти" %}</button>
+</form>
+{% endblock %}

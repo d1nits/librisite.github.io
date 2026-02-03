@@ -1,0 +1,246 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>LibriUA</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{% static 'book/css/home.css' %}" />
+    <link rel="shortcut icon" href="{% static 'book/images/logo.png' %}" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <style>
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .profile-section {
+        background-color: #4a0000;
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+        padding: 40px 80px;
+        border-radius: 8px;
+        margin: 20px auto;
+        max-width: 1200px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-content {
+        flex-grow: 1;
+    }
+
+    .profile-layout {
+        display: flex;
+        gap: 20px;
+    }
+
+    .profile-image-wrapper {
+        width: 21%;
+    }
+
+    .profile-image {
+        width: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    .profile-details {
+        flex-grow: 1;
+    }
+
+    .profile-info {
+        color: #fff;
+        margin-top: 20px;
+    }
+
+    .profile-name {
+    font-size: 75px;  
+    font-weight: 500;
+    margin: 0;
+    color: #000000;  
+}
+.navigation-bar {
+    background-color: #4a0000; 
+    padding: 10px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.navigation-bar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; 
+    width: 100%;
+}
+
+.navigation-bar li {
+    position: relative; 
+    margin: 0 15px;
+}
+
+.navigation-bar li::after {
+    content: ""; 
+    display: block;
+    width: 1px;
+    height: 20px; 
+    background-color: #fff; 
+    position: absolute;
+    right: -7.5px;
+    top: 50%;
+}
+
+.navigation-bar li:last-child::after {
+    display: none; 
+}
+
+.navigation-bar a {
+    color: #a57d4b;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navigation-bar a:hover {
+    text-decoration: underline;
+}
+    .review-bar {
+        background-color: #7f0000;
+        height: 4px;
+        margin: 10px 0;
+        border-radius: 2px;
+    }
+
+    .review-text {
+        font-size: 18px;
+    }
+
+    .profile-icon {
+        width: 80px;
+        margin-top: 20px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        padding: 40px 80px;
+        background-color: #fff;
+        border-radius: 8px;
+        max-width: 1200px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-title {
+        font-size: 32px;
+        font-weight: bold;
+        margin: 0 0 10px;
+        color: #4a0000;
+    }
+
+    .about-details {
+        font-size: 18px;
+        color: #333;
+        line-height: 1.5;
+    }
+
+    .reading-section {
+        background-color: #ffe5dd;
+        margin-top: 40px;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .reading-title {
+        font-size: 24px;
+        color: #4a0000;
+        margin-bottom: 10px;
+    }
+
+    .reading-list {
+        font-size: 18px;
+        color: #333;
+    }
+
+    .reading-list div {
+        margin: 5px 0;
+    }
+
+    @media (max-width: 991px) {
+        .profile-section, .about-container {
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .profile-layout {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-image-wrapper, .profile-details {
+            width: 100%;
+            text-align: center;
+        }
+
+        .profile-icon {
+            width: 60px;
+            margin-top: 20px;
+        }
+
+        .about-title {
+            font-size: 28px;
+        }
+
+        .about-details {
+            font-size: 16px;
+        }
+
+        .reading-title {
+            font-size: 20px;
+        }
+    }
+</style>
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-container">
+        <h1>{{ user.username }}'s Profile</h1>
+
+        
+        <div class="profile-details">
+            <img src="{{ profile.get_avatar }}" alt="{{ user.username }}'s avatar" class="avatar">
+            
+
+            {% if not is_editing %}
+                <p><strong>Date of Birth:</strong> {{ profile.date_of_birth }}</p>
+                <p><strong>Business Type:</strong> {{ profile.business_type }}</p>
+                <p><strong>About:</strong> {{ profile.about }}</p>
+                <a href="?edit=true" class="btn btn-secondary">Edit Profile</a>
+            {% else %}
+
+                <h2>Edit Profile</h2>
+                <form method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </form>
+                <a href="?edit=false" class="btn btn-secondary">Cancel Edit</a>
+            {% endif %}
+        </div>
+    </div>
+</body>
+
+</html>

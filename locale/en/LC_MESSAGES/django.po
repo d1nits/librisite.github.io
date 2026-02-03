@@ -1,0 +1,187 @@
+# English translations
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-08 11:22+0200\n"
+"PO-Revision-Date: 2025-07-08 11:22+0200\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Оберіть мову:"
+msgstr "Select language:"
+
+msgid "Наш сайт спрямований на тих, хто має спрагу до читання й хто готовий поділитися своїми враженнями з однодумцями"
+msgstr "Our site is aimed at those who are eager to read and ready to share their impressions with like-minded people."
+
+msgid "Підборки книг"
+msgstr "Book collections"
+
+msgid "Профіль"
+msgstr "Profile"
+
+msgid "Будь ласка, увійдіть до системи"
+msgstr "Please log in"
+
+msgid "Щоб отримати доступ ви повинні увійти до системи"
+msgstr "You must log in to gain access"
+
+msgid "Ще не зареєстровані?"
+msgstr "Not registered yet?"
+
+msgid "Створіть акаунт щоб розпочати:"
+msgstr "Create an account to get started:"
+
+msgid "Список добірок"
+msgstr "Collections list"
+
+msgid "Добірки відсутні"
+msgstr "No collections available"
+
+msgid "Створити нову добірку"
+msgstr "Create a new collection"
+
+msgid "Створити / редагувати добірку"
+msgstr "Create / edit collection"
+
+msgid "LibriUA — сайт, що дозволяє зануритися у захоплюючий світ літературних подорожей"
+msgstr "LibriUA — a site that lets you dive into the fascinating world of literary journeys"
+
+msgid "Читати далі"
+msgstr "Read more"
+
+msgid "Видалити запис"
+msgstr "Delete entry"
+
+msgid "Ви впевнені, що хочете видалити цей запис?"
+msgstr "Are you sure you want to delete this entry?"
+
+msgid "Редагувати"
+msgstr "Edit"
+
+msgid "Видалити"
+msgstr "Delete"
+
+msgid "Зберегти"
+msgstr "Save"
+
+msgid "Скасувати"
+msgstr "Cancel"
+
+msgid "Усі книги"
+msgstr "All books"
+
+msgid "Детальніше"
+msgstr "More details"
+
+msgid "Книги ще не додані."
+msgstr "No books added yet."
+
+msgid "Додати нову книгу"
+msgstr "Add a new book"
+
+msgid "Редагувати рецензію"
+msgstr "Edit review"
+
+msgid "Рецензій ще немає"
+msgstr "No reviews yet"
+
+msgid "Нова рецензія"
+msgstr "New review"
+
+msgid "Написати рецензію"
+msgstr "Write a review"
+
+msgid "Книги"
+msgstr "Books"
+
+msgid "Рецензії"
+msgstr "Reviews"
+
+msgid "Назад до книги"
+msgstr "Back to book"
+
+msgid "прокоментував(ла)"
+msgstr "commented"
+
+msgid "відповів(ла)"
+msgstr "replied"
+
+msgid "Відповісти"
+msgstr "Reply"
+
+msgid "Додати коментар"
+msgstr "Add a comment"
+
+msgid "Створити нову гілку форуму"
+msgstr "Create a new forum thread"
+
+msgid "Форум"
+msgstr "Forum"
+
+msgid "Створити гілку"
+msgstr "Create thread"
+
+msgid "Автор"
+msgstr "Author"
+
+msgid "Напишіть відповідь…"
+msgstr "Write a reply…"
+
+msgid "Створено"
+msgstr "Created"
+
+msgid "На форумі немає гілок."
+msgstr "No threads in the forum."
+
+msgid "Створіть першу гілку!"
+msgstr "Create the first thread!"
+
+msgid "Заголовок"
+msgstr "Title"
+
+msgid "Текст рецензії"
+msgstr "Review text"
+
+msgid "Оцінка"
+msgstr "Rating"
+
+msgid "Зображення"
+msgstr "Image"
+
+msgid "Відео"
+msgstr "Video"
+
+msgid "Аудіо"
+msgstr "Audio"
+
+msgid "Назва книги"
+msgstr "Book title"
+
+msgid "Опис"
+msgstr "Description"
+
+msgid "Обкладинка"
+msgstr "Cover image"
+
+msgid "Назад"
+msgstr "Back"
+
+msgid "Додати книгу"
+msgstr "Add book"
+
+msgid "Книга"
+msgstr "Book"
+
+msgid "Гілки форуму"
+msgstr "Forum threads"
+
+msgid "Створити нову гілку"
+msgstr "Create a new thread"
+
+msgid "На форумі немає гілок. Створіть першу гілку!"
+msgstr "There are no threads in the forum. Create the first thread!"

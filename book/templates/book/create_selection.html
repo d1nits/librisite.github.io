@@ -1,0 +1,25 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>{% trans "Створити нову добірку" %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+
+    <h1>{% trans "Створити нову добірку" %}</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">{% trans "Створити" %}</button>
+    </form>
+
+    <a href="{% url 'selection_list' %}">
+        {% trans "Назад до списку добірок" %}
+    </a>
+
+</body>
+</html>

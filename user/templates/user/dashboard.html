@@ -1,0 +1,16 @@
+{% load i18n %}
+
+{% block title %}{% trans "Панель управління" %}{% endblock %}
+
+{% block content %}
+    <h1>{% trans "Панель управління" %}</h1>
+
+    <p>
+        {% blocktrans %}
+        Ласкаво просимо до вашої панелі управління. Ви можете
+        {% endblocktrans %}
+        <a href="{% url "edit" %}">{% trans "редагувати свій профіль" %}</a>
+        {% trans "або" %}
+        <a href="{% url "password_change" %}">{% trans "змінити пароль" %}</a>.
+    </p>
+{% endblock %}

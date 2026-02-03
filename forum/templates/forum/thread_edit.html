@@ -1,0 +1,21 @@
+{% load i18n %}
+
+<h1>
+    {% trans "Редагувати гілку" %}: {{ thread.title }}
+</h1>
+
+<form method="POST">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button type="submit">
+        {% trans "Зберегти" %}
+    </button>
+</form>
+
+<br>
+
+<a href="{% url 'forum:thread_detail' thread.id %}">
+    {% trans "Назад" %}
+</a>

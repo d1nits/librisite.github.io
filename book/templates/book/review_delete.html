@@ -1,0 +1,33 @@
+{% load i18n %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            {% trans "Видалити запис" %}
+                        </h2>
+
+                        <p>
+                            {% trans "Ви впевнені, що хочете видалити цей запис?" %}
+                        </p>
+
+                        <form method="post">
+                            {% csrf_token %}
+
+                            <button type="submit" class="btn btn-danger">
+                                {% trans "Видалити" %}
+                            </button>
+
+                            <a href="{% url 'review_list' %}" class="btn btn-secondary">
+                                {% trans "Скасувати" %}
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

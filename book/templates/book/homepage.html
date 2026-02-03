@@ -1,0 +1,132 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>LibriUA</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'book/css/posts.css' %}" />
+    <link rel="shortcut icon" href="{% static 'book/images/logo.png' %}" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+          crossorigin="anonymous">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="toggle">
+            <span class="first"></span>
+            <span class="middle"></span>
+            <span class="last"></span>
+        </div>
+
+        <div class="navigation-bar">
+            <ul>
+                <li class="active">
+                    <a href="{% url 'home' %}">
+                        {% trans "Home" %}
+                        <span class="underline"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{% url 'book_list' %}">
+                        {% trans "Усі книги" %}
+                        <span class="underline"></span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="{% url 'selection_list' %}">
+                        {% trans "Підборки книг" %}
+                        <span class="underline"></span>
+                    </a>
+                </li>
+
+                <li>
+                    {% if request.user.is_authenticated %}
+                        <a href="{% url 'profile_view' request.user.username %}">
+                            {% trans "Профіль" %}
+                            <span class="underline"></span>
+                        </a>
+                    {% else %}
+                        <a href="{% url 'login_prompt' %}">
+                            {% trans "Профіль" %}
+                            <span class="underline"></span>
+                        </a>
+                    {% endif %}
+                </li>
+
+                <li>
+                    <a href="{% url 'forum:thread_list' %}">
+                        {% trans "Форум" %}
+                        <span class="underline"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="text">
+        <h2>{% trans "Read with" %}</h2>
+        <h1>{% trans "LibriUA" %}</h1>
+
+        <div class="arrow">
+            <span class="left"></span>
+            <i class="fas fa-asterisk"></i>
+            <span class="right"></span>
+        </div>
+
+        <span>{% trans "Веди читацький щоденник разом з нами" %}</span>
+    </div>
+
+    <svg class="svg-down" width="192" height="61" viewBox="0 0 160.7 61.5">
+        <path fill="currentColor"
+              d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4
+              c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0
+              c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8
+              c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"/>
+    </svg>
+
+    <div class="arrow-down"></div>
+</header>
+
+<div class="about-us">
+    <div class="text">
+        <h2>{% trans "About Us" %}</h2>
+
+        <p>
+            {% trans "LibriUA — додаток, що дозволяє не лише залишати яскраві враження після прочитаного у вигляді рецензій, а й створювати власні тематичні підбірки, відкривати форуми на цікаві теми та відслідковувати свій темп читання. Заходь на сайт і бери участь у подіях, щоб підвищувати свій рівень та отримати титул найактивнішого читача." %}
+        </p>
+    </div>
+
+    <div class="image-container">
+        <div class="image image1">
+            <img src="{% static 'book/images/bildy.jpg' %}" alt="{% trans 'Book Photo' %}">
+        </div>
+        <div class="image image2">
+            <img src="{% static 'book/images/imgbook.jpg' %}" alt="{% trans 'Book Photo' %}">
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="text">
+        <h2>{% trans "ABOUT LIBRIUA" %}</h2>
+        <div><i class="fas fa-asterisk"></i></div>
+        <p>{% trans "LibriUA — сайт, що дозволяє зануритися у захоплюючий світ літературних подорожей" %}</p>
+    </div>
+</footer>
+
+</body>
+</html>

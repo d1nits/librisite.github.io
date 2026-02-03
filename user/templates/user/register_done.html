@@ -1,0 +1,18 @@
+{% load i18n %}
+
+{% block title %}{% trans "Welcome" %}{% endblock %}
+
+{% block content %}
+    <h1>
+        {% blocktrans with name=new_user.first_name %}
+        Раді вас вітати {{ name }}!
+        {% endblocktrans %}
+    </h1>
+
+    <p>
+        {% blocktrans %}
+        Ваш акаунт було успішно створено
+        {% endblocktrans %}
+        <a href="{% url "login" %}">{% trans "увійдіть" %}</a>.
+    </p>
+{% endblock %}

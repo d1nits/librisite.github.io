@@ -1,0 +1,20 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Видалення</title>
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+    <h1>Видалити добірку</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Видалити</button>
+    </form>
+    <a href="{% url 'selection_list' %}">Видалити добірку</a>
+</body>
+</html>

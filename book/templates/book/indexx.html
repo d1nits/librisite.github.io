@@ -1,0 +1,74 @@
+{% load static i18n %}
+
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as LANGUAGES %}
+
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="{% static 'blog/images/logo.png' %}" type="image/png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="{% static 'book/css/index.css' %}" />
+</head>
+
+<body>
+
+   
+    <form action="{% url 'set_language' %}" method="post" style="margin: 20px;">
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{ request.path }}">
+        <label for="language_select">{% trans "Оберіть мову:" %}</label>
+        <select name="language" id="language_select" onchange="this.form.submit()">
+            <option value="uk" {% if LANGUAGE_CODE == 'uk' %}selected{% endif %}>Українська</option>
+            <option value="en" {% if LANGUAGE_CODE == 'en' %}selected{% endif %}>English</option>
+            <option value="de" {% if LANGUAGE_CODE == 'de' %}selected{% endif %}>Deutsch</option>
+            <option value="es" {% if LANGUAGE_CODE == 'es' %}selected{% endif %}>Español</option>
+        </select>
+    </form>
+
+    <main>
+        <ul class="slider">
+            {% for img in "123456"|make_list %}
+            <li class="item" style="background-image: url('{% static 'book/images/carousel' %}{{ img }}.jpg')">
+                <div class="content">
+                    <h2 class="title">LibriUA</h2>
+                    <p class="description">{% trans "Наш сайт спрямований на тих, хто має спрагу до читання й хто готовий поділитися своїми враженнями з однодумцями" %}</p>
+                    <a href="{% url 'homepage' %}">
+                        <button type="button">{% trans "Read More" %}</button>
+                    </a>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        <nav class="nav">
+            <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
+            <ion-icon class="btn next" name="arrow-forward-outline"></ion-icon>
+        </nav>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        const slider = document.querySelector('.slider');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+
+        function activate(e) {
+            const items = document.querySelectorAll('.item');
+            if (e.target === nextBtn) {
+                slider.append(items[0]);
+            } else if (e.target === prevBtn) {
+                slider.prepend(items[items.length - 1]);
+            }
+        }
+
+        prevBtn.addEventListener('click', activate);
+        nextBtn.addEventListener('click', activate);
+    </script>
+
+</body>
+</html>
