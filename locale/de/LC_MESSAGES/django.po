@@ -11,32 +11,36 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+
+
+
+
 msgid "Оберіть мову:"
 msgstr "Sprache auswählen:"
 
 msgid "Наш сайт спрямований на тих, хто має спрагу до читання й хто готовий поділитися своїми враженнями з однодумцями"
-msgstr "Unsere Seite richtet sich an diejenigen, die eine Leidenschaft fürs Lesen haben und bereit sind, ihre Eindrücke mit Gleichgesinnten zu teilen."
+msgstr "Unsere Website richtet sich an alle, die eine Leidenschaft fürs Lesen haben und bereit sind, ihre Eindrücke mit Gleichgesinnten zu teilen."
 
 msgid "Підборки книг"
-msgstr "Sammlungsübersicht"
+msgstr "Büchersammlungen"
 
 msgid "Профіль"
 msgstr "Profil"
 
 msgid "Будь ласка, увійдіть до системи"
-msgstr "Bitte einloggen"
+msgstr "Bitte melden Sie sich an"
 
 msgid "Щоб отримати доступ ви повинні увійти до системи"
-msgstr "Sie müssen sich anmelden, um Zugriff zu erhalten"
+msgstr "Um Zugriff zu erhalten, müssen Sie sich anmelden"
 
 msgid "Ще не зареєстровані?"
 msgstr "Noch nicht registriert?"
 
 msgid "Створіть акаунт щоб розпочати:"
-msgstr "Erstellen Sie ein Konto, um zu starten:"
+msgstr "Erstellen Sie ein Konto, um zu beginnen:"
 
 msgid "Список добірок"
-msgstr "Büchersammlungen"
+msgstr "Sammlungsliste"
 
 msgid "Добірки відсутні"
 msgstr "Keine Sammlungen vorhanden"
@@ -48,7 +52,7 @@ msgid "Створити / редагувати добірку"
 msgstr "Sammlung erstellen / bearbeiten"
 
 msgid "LibriUA — сайт, що дозволяє зануритися у захоплюючий світ літературних подорожей"
-msgstr "LibriUA — eine Seite, die es ermöglicht, in die faszinierende Welt literarischer Reisen einzutauchen"
+msgstr "LibriUA ist eine Website, die es ermöglicht, in die faszinierende Welt literarischer Reisen einzutauchen"
 
 msgid "Читати далі"
 msgstr "Weiterlesen"
@@ -135,7 +139,7 @@ msgid "Створено"
 msgstr "Erstellt"
 
 msgid "На форумі немає гілок."
-msgstr "Keine Threads im Forum."
+msgstr "Im Forum gibt es keine Threads."
 
 msgid "Створіть першу гілку!"
 msgstr "Erstellen Sie den ersten Thread!"
@@ -165,7 +169,7 @@ msgid "Опис"
 msgstr "Beschreibung"
 
 msgid "Обкладинка"
-msgstr "Buchcover"
+msgstr "Coverbild"
 
 msgid "Назад"
 msgstr "Zurück"
@@ -177,10 +181,49 @@ msgid "Книга"
 msgstr "Buch"
 
 msgid "Гілки форуму"
-msgstr "Forum threads"
+msgstr "Forenthreads"
 
 msgid "Створити нову гілку"
-msgstr "Create a new thread"
+msgstr "Neuen Thread erstellen"
 
-msgid "На форумі немає гілок. Створіть першу гілку!"
-msgstr "There are no threads in the forum. Create the first thread!"
+msgid "Будь ласка, використовуйте форму нижче для входу. Якщо у вас ще немає акаунту, зареєструйтесь тут"
+msgstr "Bitte verwenden Sie das untenstehende Formular, um sich anzumelden. Wenn Sie noch kein Konto haben, registrieren Sie sich hier."
+
+msgid "зареєструйтесь тут"
+msgstr "hier registrieren"
+
+msgid "Вхід"
+msgstr "Anmelden"
+
+msgid "Ваш акаунт було успішно створено"
+msgstr "Ihr Konto wurde erfolgreich erstellt."
+
+msgid "Раді вас вітати"
+msgstr "Wir freuen uns, Sie willkommen zu heißen."
+
+msgid "увійдіть"
+msgstr "Melden Sie sich an"
+
+msgid "Ласкаво просимо до вашої панелі управління. Ви можете"
+msgstr "Willkommen in Ihrem Dashboard. Sie können"
+
+msgid "редагувати свій профіль"
+msgstr "Ihr Profil bearbeiten"
+
+msgid "або"
+msgstr "oder"
+
+msgid "змінити пароль"
+msgstr "Ihr Passwort ändern"
+
+msgid "Редагувати гілку"
+msgstr "Thread bearbeiten"
+
+msgid "Веди читацький щоденник разом з нами"
+msgstr "Führe mit uns ein Lesetagebuch"
+
+msgid "Read with"
+msgstr "Lies mit"
+
+msgid "LibriUA — додаток, що дозволяє не лише залишати яскраві враження після прочитаного у вигляді рецензій, а й створювати власні тематичні підбірки, відкривати форуми на цікаві теми та відслідковувати свій темп читання. Заходь на сайт і бери участь у подіях, щоб підвищувати свій рівень та отримати титул найактивнішого читача."
+msgstr "LibriUA ist eine App, mit der du nicht nur deine Leseeindrücke in Form von Rezensionen teilen kannst, sondern auch eigene thematische Sammlungen erstellst, Foren zu spannenden Themen eröffnest und dein Lesetempo verfolgst. Besuche die Website und nimm an Events teil, um dein Niveau zu steigern und den Titel des aktivsten Lesers zu erhalten."

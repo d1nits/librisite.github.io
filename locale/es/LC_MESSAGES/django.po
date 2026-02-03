@@ -11,11 +11,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+
 msgid "Оберіть мову:"
-msgstr "Seleccione idioma:"
+msgstr "Seleccionar idioma:"
 
 msgid "Наш сайт спрямований на тих, хто має спрагу до читання й хто готовий поділитися своїми враженнями з однодумцями"
-msgstr "Nuestro sitio está dirigido a quienes tienen sed de lectura y están dispuestos a compartir sus impresiones con personas afines."
+msgstr "Nuestro sitio está dirigido a quienes sienten pasión por la lectura y están dispuestos a compartir sus impresiones con personas afines."
 
 msgid "Підборки книг"
 msgstr "Colecciones de libros"
@@ -48,7 +49,7 @@ msgid "Створити / редагувати добірку"
 msgstr "Crear / editar colección"
 
 msgid "LibriUA — сайт, що дозволяє зануритися у захоплюючий світ літературних подорожей"
-msgstr "LibriUA — un sitio que te permite sumergirte en el fascinante mundo de los viajes literarios"
+msgstr "LibriUA es un sitio que te permite sumergirte en el fascinante mundo de los viajes literarios"
 
 msgid "Читати далі"
 msgstr "Leer más"
@@ -78,7 +79,7 @@ msgid "Детальніше"
 msgstr "Más detalles"
 
 msgid "Книги ще не додані."
-msgstr "No se han agregado libros aún."
+msgstr "Aún no se han añadido libros."
 
 msgid "Додати нову книгу"
 msgstr "Agregar un nuevo libro"
@@ -117,7 +118,7 @@ msgid "Додати коментар"
 msgstr "Agregar un comentario"
 
 msgid "Створити нову гілку форуму"
-msgstr "Crear un nuevo hilo en el foro"
+msgstr "Crear un nuevo hilo del foro"
 
 msgid "Форум"
 msgstr "Foro"
@@ -129,7 +130,7 @@ msgid "Автор"
 msgstr "Autor"
 
 msgid "Напишіть відповідь…"
-msgstr "Escribe una respuesta…"
+msgstr "Escriba una respuesta…"
 
 msgid "Створено"
 msgstr "Creado"
@@ -138,7 +139,7 @@ msgid "На форумі немає гілок."
 msgstr "No hay hilos en el foro."
 
 msgid "Створіть першу гілку!"
-msgstr "¡Crea el primer hilo!"
+msgstr "¡Cree el primer hilo!"
 
 msgid "Заголовок"
 msgstr "Título"
@@ -153,7 +154,7 @@ msgid "Зображення"
 msgstr "Imagen"
 
 msgid "Відео"
-msgstr "Vídeo"
+msgstr "Video"
 
 msgid "Аудіо"
 msgstr "Audio"
@@ -171,7 +172,7 @@ msgid "Назад"
 msgstr "Volver"
 
 msgid "Додати книгу"
-msgstr "Añadir libro"
+msgstr "Agregar libro"
 
 msgid "Книга"
 msgstr "Libro"
@@ -182,5 +183,44 @@ msgstr "Hilos del foro"
 msgid "Створити нову гілку"
 msgstr "Crear un nuevo hilo"
 
-msgid "На форумі немає гілок. Створіть першу гілку!"
-msgstr "No hay hilos en el foro. ¡Crea el primer hilo!"
+msgid "Будь ласка, використовуйте форму нижче для входу. Якщо у вас ще немає акаунту, зареєструйтесь тут"
+msgstr "Por favor, utilice el formulario de abajo para iniciar sesión. Si aún no tiene una cuenta, regístrese aquí."
+
+msgid "зареєструйтесь тут"
+msgstr "regístrese aquí"
+
+msgid "Вхід"
+msgstr "Iniciar sesión"
+
+msgid "Ваш акаунт було успішно створено"
+msgstr "Su cuenta ha sido creada con éxito."
+
+msgid "Раді вас вітати"
+msgstr "Nos alegra darle la bienvenida."
+
+msgid "увійдіть"
+msgstr "Inicie sesión"
+
+msgid "Ласкаво просимо до вашої панелі управління. Ви можете"
+msgstr "Bienvenido a su panel de control. Puede"
+
+msgid "редагувати свій профіль"
+msgstr "editar su perfil"
+
+msgid "або"
+msgstr "o"
+
+msgid "змінити пароль"
+msgstr "cambiar su contraseña"
+
+msgid "Редагувати гілку"
+msgstr "Editar hilo"
+
+msgid "Веди читацький щоденник разом з нами"
+msgstr "Lleva un diario de lectura con nosotros"
+
+msgid "Read with"
+msgstr "Lee con"
+
+msgid "LibriUA — додаток, що дозволяє не лише залишати яскраві враження після прочитаного у вигляді рецензій, а й створювати власні тематичні підбірки, відкривати форуми на цікаві теми та відслідковувати свій темп читання. Заходь на сайт і бери участь у подіях, щоб підвищувати свій рівень та отримати титул найактивнішого читача."
+msgstr "LibriUA es una aplicación que te permite no solo compartir impresiones destacadas de tus lecturas en forma de reseñas, sino también crear tus propias colecciones temáticas, abrir foros sobre temas interesantes y seguir tu ritmo de lectura. Visita el sitio y participa en eventos para mejorar tu nivel y obtener el título del lector más activo."

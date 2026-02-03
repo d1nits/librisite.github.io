@@ -1,9 +1,7 @@
-# English translations
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-07-08 11:22+0200\n"
 "PO-Revision-Date: 2025-07-08 11:22+0200\n"
 "Language: en\n"
@@ -11,6 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
 
 msgid "Оберіть мову:"
 msgstr "Select language:"
@@ -55,7 +54,7 @@ msgid "Читати далі"
 msgstr "Read more"
 
 msgid "Видалити запис"
-msgstr "Delete entry"
+msgstr "Delete post"
 
 msgid "Ви впевнені, що хочете видалити цей запис?"
 msgstr "Are you sure you want to delete this entry?"
@@ -183,5 +182,51 @@ msgstr "Forum threads"
 msgid "Створити нову гілку"
 msgstr "Create a new thread"
 
+msgid "Будь ласка, використовуйте форму нижче для входу. Якщо у вас ще немає акаунту, зареєструйтесь тут"
+msgstr "Please use the form below to log in. If you don’t have an account yet, register here."
+
+msgid "зареєструйтесь тут"
+msgstr "register here"
+
+msgid "Вхід"
+msgstr "Log in"
+
+msgid "Ваш акаунт було успішно створено"
+msgstr "Your account has been successfully created."
+
+msgid "Раді вас вітати"
+msgstr "We’re glad to welcome you."
+
+msgid "увійдіть"
+msgstr "Sign in"
+
+msgid "Ласкаво просимо до вашої панелі управління. Ви можете"
+msgstr "Welcome to your dashboard. You can"
+
+msgid "редагувати свій профіль"
+msgstr "edit your profile"
+
+msgid "або"
+msgstr "or"
+
+msgid "змінити пароль"
+msgstr "change your password"
+
+msgid "Редагувати гілку"
+msgstr "Edit thread"
+
 msgid "На форумі немає гілок. Створіть першу гілку!"
-msgstr "There are no threads in the forum. Create the first thread!"
+msgstr "There are no threads on the forum."
+
+
+msgid "Create the first one!"
+msgstr "Створіть першу гілку!"
+
+msgid "Веди читацький щоденник разом з нами"
+msgstr "Keep a reading journal with us"
+
+msgid "Read with"
+msgstr "Read with"
+
+msgid "LibriUA — додаток, що дозволяє не лише залишати яскраві враження після прочитаного у вигляді рецензій, а й створювати власні тематичні підбірки, відкривати форуми на цікаві теми та відслідковувати свій темп читання. Заходь на сайт і бери участь у подіях, щоб підвищувати свій рівень та отримати титул найактивнішого читача."
+msgstr "LibriUA is an app that allows you not only to share vivid impressions of what you’ve read through reviews, but also to create your own themed collections, open forums on interesting topics, and track your reading pace. Visit the site and take part in events to improve your level and earn the title of the most active reader."
