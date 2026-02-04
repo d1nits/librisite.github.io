@@ -126,7 +126,7 @@ msgid "Створити"
 msgstr "Crear"
 
 msgid "Детальніше"
-msgstr "Más detalles"
+msgstr "Más información"
 
 msgid "Read More"
 msgstr "Leer más"
@@ -168,3 +168,27 @@ msgstr "Por favor, utiliza el formulario de abajo para iniciar sesión. Si aún 
 
 msgid "На форумі немає гілок. <a href=\"%(url)s\">Створіть першу гілку!</a>"
 msgstr "No hay hilos en el foro. <a href=\"%(url)s\">¡Crea el primer hilo!</a>"
+
+msgid "Щоб переглянути книги та рецензії, будь ласка, увійдіть або зареєструйтесь"
+msgstr "Para ver libros y reseñas, por favor inicie sesión o regístrese."
+
+msgid "Вхід"
+msgstr "Iniciar sesión"
+
+msgid "Раді вас вітати"
+msgstr "Bienvenido"
+
+msgid "Будь ласка, використовуйте форму нижче для входу."
+msgstr "Por favor, use el formulario a continuación para iniciar sesión."
+
+msgid "Ще немає акаунту?"
+msgstr "¿Aún no tienes cuenta?"
+
+msgid "Зареєструватися"
+msgstr "Registrarse"
+
+msgid "Вже маєте акаунт?"
+msgstr "¿Ya tienes una cuenta?"
+
+msgid "Увійти"
+msgstr "Iniciar sesión"

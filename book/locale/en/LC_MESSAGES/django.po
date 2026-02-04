@@ -126,9 +126,6 @@ msgid "Створити"
 msgstr "Create"
 
 msgid "Детальніше"
-msgstr "More details"
-
-msgid "Read More"
 msgstr "Read more"
 
 # Collections
@@ -168,3 +165,26 @@ msgstr "Please use the form below to log in. If you do not have an account yet,"
 
 msgid "На форумі немає гілок. <a href=\"%(url)s\">Створіть першу гілку!</a>"
 msgstr "There are no threads in the forum. <a href=\"%(url)s\">Create the first thread!</a>"
+
+msgid "Щоб переглянути книги та рецензії, будь ласка, увійдіть або зареєструйтесь"
+msgstr "To view books and reviews, please log in or register"
+
+msgid "Раді вас вітати"
+msgstr "Welcome"
+
+msgid "Будь ласка, використовуйте форму нижче для входу."
+msgstr "Please use the form below to log in."
+
+msgid "Ще немає акаунту?"
+msgstr "Don't have an account yet?"
+
+msgid "Зареєструватися"
+msgstr "Register"
+
+msgid "Вже маєте акаунт?"
+msgstr "Already have an account?"
+
+msgid "Увійти"
+msgstr "Log in"
+
+

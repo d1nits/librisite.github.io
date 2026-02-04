@@ -168,3 +168,24 @@ msgstr "Bitte nutzen Sie das untenstehende Formular, um sich anzumelden. Wenn Si
 
 msgid "На форумі немає гілок. <a href=\"%(url)s\">Створіть першу гілку!</a>"
 msgstr "Im Forum gibt es noch keine Threads. <a href=\"%(url)s\">Erstellen Sie den ersten Thread!</a>"
+
+msgid "Щоб переглянути книги та рецензії, будь ласка, увійдіть або зареєструйтесь"
+msgstr "Um Bücher und Rezensionen anzusehen, melden Sie sich bitte an oder registrieren Sie sich."
+
+msgid "Раді вас вітати"
+msgstr "Willkommen"
+
+msgid "Будь ласка, використовуйте форму нижче для входу."
+msgstr "Bitte verwenden Sie das folgende Formular, um sich anzumelden."
+
+msgid "Ще немає акаунту?"
+msgstr "Noch kein Konto?"
+
+msgid "Зареєструватися"
+msgstr "Registrieren"
+
+msgid "Вже маєте акаунт?"
+msgstr "Haben Sie bereits ein Konto?"
+
+msgid "Увійти"
+msgstr "Einloggen"

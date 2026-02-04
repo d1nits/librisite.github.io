@@ -1,8 +1,44 @@
 {% load i18n %}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>{% trans "Вхід" %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
-{% block title %}{% trans "Вхід" %}{% endblock %}
+    <style>
+        body {
+            background-color: #f5f0eb; 
+        }
+        .login-container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff7f0;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #6b4c3b;
+            margin-bottom: 20px;
+        }
+        .btn-success {
+            background-color: #a47149;
+            border-color: #8b5e3c;
+        }
+        .btn-secondary {
+            background-color: #d9b89c;
+            border-color: #463d37;
+            color: #4a2e1f;
+        }
+        .btn-success:hover, .btn-secondary:hover {
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
 
-{% block content %}
+<div class="login-container">
     {% if new_user %}
         {% trans "Раді вас вітати" as welcome_text %}
         <h1>{{ welcome_text }} {{ new_user.first_name }}!</h1>
@@ -19,7 +55,10 @@
         {{ form.as_p }}
         {% csrf_token %}
         <p>
-            <input type="submit" value="{% trans 'Увійти' %}">
+            <input type="submit" value="{% trans 'Увійти' %}" class="btn btn-primary">
         </p>
     </form>
-{% endblock %}
+</div>
+
+</body>
+</html>
