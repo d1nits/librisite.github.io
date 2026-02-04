@@ -12,3 +12,40 @@ User interaction on the website is not available anonymously. To create reviews,
 <img width="1576" height="400" alt="Image" src="https://github.com/user-attachments/assets/b21d10c6-387f-4d19-9c09-c78837cb1b62" />
 
 <img width="1486" height="509" alt="Image" src="https://github.com/user-attachments/assets/8851bd25-1d38-4e05-b5a6-a7fd0a5003e3" />
+
+
+Next instructions will help you get a copy of the project running on your local machine for development and testing.
+
+
+## Prerequisites
+
+- Python 3.5 or higher  
+- Django 2.0 or higher
+
+## Installing
+
+
+Open terminal and run:
+
+```bash
+git clone https://github.com/d1nits/librisite.github.io.git
+cd REPOSITORY
+
+Create a virtual environment and activate it:
+
+WINDOWS
+python -m venv venv
+venv\Scripts\activate
+
+LINUX
+python -m venv venv
+source venv/bin/activate
+
+Install dependencies:
+pip install -r requirements.txt
+
+To run the program in local server use the following command:
+
+python manage.py runserver
+
+
