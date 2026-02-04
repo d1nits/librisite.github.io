@@ -9,3 +9,6 @@ The platform also includes a “Book Collections” section, where users can cre
 User interaction on the website is not available anonymously. To create reviews, participate in discussions, or manage book collections, users must first authenticate. 
 
 
+<img width="1576" height="400" alt="Image" src="https://github.com/user-attachments/assets/b21d10c6-387f-4d19-9c09-c78837cb1b62" />
+
+<img width="1486" height="509" alt="Image" src="https://github.com/user-attachments/assets/8851bd25-1d38-4e05-b5a6-a7fd0a5003e3" />
