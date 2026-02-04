@@ -1,379 +1,170 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: LibriUA 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-03 13:18+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-02-03 14:00+0100\n"
+"Last-Translator: Gemini\n"
+"Language-Team: English\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
-"1 : 2;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\book\forms.py:19
-msgid "Заголовок"
-msgstr "Title"
-
-#: .\book\forms.py:20
-msgid "Текст рецензії"
-msgstr "Review text"
-
-#: .\book\forms.py:21
-msgid "Оцінка"
-msgstr "Rating"
-
-#: .\book\forms.py:22
-msgid "Зображення"
-msgstr "Image"
-
-#: .\book\forms.py:23
-msgid "Відео"
-msgstr "Video"
-
-#: .\book\forms.py:24
-msgid "Аудіо"
-msgstr "Audio"
-
-#: .\book\forms.py:38
-msgid "Назва книги"
-msgstr "Book title"
-
-#: .\book\forms.py:39 .\book\templates\book\book_detail.html:11
-#: .\book\templates\book\book_list.html:29
-msgid "Автор"
-msgstr "Author"
-
-#: .\book\forms.py:40
-msgid "Опис"
-msgstr "Description"
-
-#: .\book\forms.py:41
-msgid "Обкладинка"
-msgstr "Cover image"
-
-#: .\book\templates\book\book_detail.html:19
-#: .\book\templates\book\review_form.html:36
-#: .\book\templates\book\review_list.html:7
-msgid "Рецензії"
-msgstr "Reviews"
-
-#: .\book\templates\book\book_detail.html:33
-msgid "Рецензій ще немає"
-msgstr "No reviews yet"
-
-#: .\book\templates\book\book_detail.html:38
-#: .\book\templates\book\review_list.html:102
-msgid "Написати рецензію"
-msgstr "Write a review"
-
-#: .\book\templates\book\book_form.html:7
-#: .\book\templates\book\book_form.html:15
-msgid "Додати книгу"
-msgstr "Add book"
-
-#: .\book\templates\book\book_form.html:23
-#: .\book\templates\book\review_create.html:56
-#: .\book\templates\book\review_form.html:65
-#: .\book\templates\book\selection_form.html:53
-msgid "Зберегти"
-msgstr "Save"
-
-#: .\book\templates\book\book_form.html:27
-msgid "Назад"
-msgstr "Back"
-
-#: .\book\templates\book\book_list.html:6
-#: .\book\templates\book\book_list.html:14
-#: .\book\templates\book\homepage.html:43
-#: .\book\templates\book\review_detail.html:43
-msgid "Усі книги"
-msgstr "All books"
-
-#: .\book\templates\book\book_list.html:34
-msgid "Детальніше"
-msgstr "More details"
-
-#: .\book\templates\book\book_list.html:40
-msgid "Книги ще не додані."
-msgstr "No books added yet."
-
-#: .\book\templates\book\book_list.html:46
-msgid "Додати нову книгу"
-msgstr "Add a new book"
-
-#: .\book\templates\book\create_selection.html:7
-#: .\book\templates\book\create_selection.html:12
-#: .\book\templates\book\selection_list.html:55
-msgid "Створити нову добірку"
-msgstr "Create a new collection"
-
-#: .\book\templates\book\create_selection.html:17
-#, fuzzy
-#| msgid "Створено"
-msgid "Створити"
-msgstr "Created"
-
-#: .\book\templates\book\create_selection.html:21
-#, fuzzy
-#| msgid "Список добірок"
-msgid "Назад до списку добірок"
-msgstr "Collections list"
-
-#: .\book\templates\book\homepage.html:36
-#: .\book\templates\book\review_create.html:31
 msgid "Home"
-msgstr ""
+msgstr "Home"
 
-#: .\book\templates\book\homepage.html:51
-msgid "Підборки книг"
-msgstr "Book collections"
+msgid "LibriUA"
+msgstr "LibriUA"
 
-#: .\book\templates\book\homepage.html:59
-#: .\book\templates\book\homepage.html:64
 msgid "Профіль"
 msgstr "Profile"
 
-#: .\book\templates\book\homepage.html:72
 msgid "Форум"
 msgstr "Forum"
 
-#: .\book\templates\book\homepage.html:81
-msgid "Read with"
-msgstr ""
-
-#: .\book\templates\book\homepage.html:82
-msgid "LibriUA"
-msgstr ""
-
-#: .\book\templates\book\homepage.html:90
-msgid "Веди читацький щоденник разом з нами"
-msgstr ""
-
-#: .\book\templates\book\homepage.html:106
-msgid "About Us"
-msgstr ""
-
-#: .\book\templates\book\homepage.html:109
-msgid ""
-"LibriUA — додаток, що дозволяє не лише залишати яскраві враження після "
-"прочитаного у вигляді рецензій, а й створювати власні тематичні підбірки, "
-"відкривати форуми на цікаві теми та відслідковувати свій темп читання. "
-"Заходь на сайт і бери участь у подіях, щоб підвищувати свій рівень та "
-"отримати титул найактивнішого читача."
-msgstr ""
-
-#: .\book\templates\book\homepage.html:115
-#: .\book\templates\book\homepage.html:118
-msgid "Book Photo"
-msgstr ""
-
-#: .\book\templates\book\homepage.html:125
-msgid "ABOUT LIBRIUA"
-msgstr ""
-
-#: .\book\templates\book\homepage.html:127
-msgid ""
-"LibriUA — сайт, що дозволяє зануритися у захоплюючий світ літературних "
-"подорожей"
-msgstr ""
-"LibriUA — a site that lets you dive into the fascinating world of literary "
-"journeys"
-
-#: .\book\templates\book\indexx.html:23
 msgid "Оберіть мову:"
-msgstr "Select language:"
+msgstr "Choose language:"
 
-#: .\book\templates\book\indexx.html:38
-msgid ""
-"Наш сайт спрямований на тих, хто має спрагу до читання й хто готовий "
-"поділитися своїми враженнями з однодумцями"
-msgstr ""
-"Our site is aimed at those who are eager to read and ready to share their "
-"impressions with like-minded people."
-
-#: .\book\templates\book\indexx.html:40
-msgid "Read More"
-msgstr ""
-
-#: .\book\templates\book\review_create.html:9
-#: .\book\templates\book\review_create.html:37
-#: .\book\templates\book\review_create.html:46
-#, fuzzy
-#| msgid "Створити нову добірку"
-msgid "Створити нову рецензію"
-msgstr "Create a new collection"
-
-#: .\book\templates\book\review_create.html:18
-msgid "Blog"
-msgstr ""
-
-#: .\book\templates\book\review_create.html:60
-msgid "Відмінити"
-msgstr ""
-
-#: .\book\templates\book\review_delete.html:10
-msgid "Видалити запис"
-msgstr "Delete entry"
-
-#: .\book\templates\book\review_delete.html:14
-msgid "Ви впевнені, що хочете видалити цей запис?"
-msgstr "Are you sure you want to delete this entry?"
-
-#: .\book\templates\book\review_delete.html:21
-#: .\book\templates\book\review_detail.html:79
-#: .\book\templates\book\selection_detail.html:102
-#: .\book\templates\book\selection_list.html:42
-msgid "Видалити"
-msgstr "Delete"
-
-#: .\book\templates\book\review_delete.html:25
-msgid "Скасувати"
-msgstr "Cancel"
-
-#: .\book\templates\book\review_detail.html:35
-#, fuzzy
-#| msgid "Рецензії"
-msgid "Рецензіі"
-msgstr "Reviews"
-
-#: .\book\templates\book\review_detail.html:60
-#: .\book\templates\book\review_form.html:55
 msgid "Книга"
 msgstr "Book"
 
-#: .\book\templates\book\review_detail.html:74
-#: .\book\templates\book\selection_detail.html:97
-#: .\book\templates\book\selection_list.html:38
-msgid "Редагувати"
-msgstr "Edit"
-
-#: .\book\templates\book\review_form.html:11
-#: .\book\templates\book\review_form.html:47
-msgid "Редагувати рецензію"
-msgstr "Edit review"
-
-#: .\book\templates\book\review_form.html:13
-#: .\book\templates\book\review_form.html:49
-msgid "Нова рецензія"
-msgstr "New review"
-
-#: .\book\templates\book\review_form.html:31
 msgid "Книги"
 msgstr "Books"
 
-#: .\book\templates\book\review_form.html:71
+msgid "Усі книги"
+msgstr "All books"
+
+msgid "Назва книги"
+msgstr "Book title"
+
+msgid "Автор"
+msgstr "Author"
+
+msgid "Опис"
+msgstr "Description"
+
+msgid "Обкладинка"
+msgstr "Book cover"
+
+msgid "Book Photo"
+msgstr "Book photo"
+
+msgid "Додати книгу"
+msgstr "Add book"
+
+msgid "Додати нову книгу"
+msgstr "Add new book"
+
+msgid "Книги ще не додані."
+msgstr "No books have been added yet."
+
 msgid "Назад до книги"
 msgstr "Back to book"
 
-#: .\book\templates\book\review_list.html:96
-#, fuzzy
-#| msgid "Текст рецензії"
-msgid "Усі рецензії"
-msgstr "Review text"
+# Reviews and ratings
+msgid "Рецензії"
+msgstr "Reviews"
 
-#: .\book\templates\book\review_list.html:117
-msgid "No image"
-msgstr ""
-
-#: .\book\templates\book\review_list.html:133
-#, fuzzy
-#| msgid "Рецензій ще немає"
-msgid "Рецензій поки немає"
+msgid "Рецензій ще немає"
 msgstr "No reviews yet"
 
-#: .\book\templates\book\selection_detail.html:27
-#, fuzzy
-#| msgid "Усі книги"
-msgid "Усі підбірки"
-msgstr "All books"
+msgid "Написати рецензію"
+msgstr "Write a review"
 
-#: .\book\templates\book\selection_detail.html:34
-#, fuzzy
-#| msgid "Створити нову добірку"
-msgid "Створити підбірку"
-msgstr "Create a new collection"
+msgid "Нова рецензія"
+msgstr "New review"
 
-#: .\book\templates\book\selection_detail.html:47
-#, fuzzy
-#| msgid "Автор"
-msgid "Автор:"
-msgstr "Author"
+msgid "Створити нову рецензію"
+msgstr "Create new review"
 
-#: .\book\templates\book\selection_detail.html:56
-msgid "Книги в підбірці"
-msgstr ""
+msgid "Редагувати рецензію"
+msgstr "Edit review"
 
-#: .\book\templates\book\selection_detail.html:89
-msgid "У цій підбірці поки немає книг."
-msgstr ""
+msgid "Заголовок"
+msgstr "Title"
 
-#: .\book\templates\book\selection_form.html:8
-msgid "Створити / редагувати добірку"
-msgstr "Create / edit collection"
+msgid "Текст рецензії"
+msgstr "Review text"
 
-#: .\book\templates\book\selection_list.html:8
-#: .\book\templates\book\selection_list.html:24
-msgid "Список добірок"
-msgstr "Collections list"
+msgid "Оцінка"
+msgstr "Rating"
 
-#: .\book\templates\book\selection_list.html:17
-#: .\book\templates\book\selection_list.html:63
-#, fuzzy
-#| msgid "Добірки відсутні"
-msgid "Добірки"
-msgstr "No collections available"
+# Media
+msgid "Зображення"
+msgstr "Image"
 
-#: .\book\templates\book\selection_list.html:48
-msgid "Добірки відсутні"
-msgstr "No collections available"
+msgid "Відео"
+msgstr "Video"
 
-#~ msgid "Будь ласка, увійдіть до системи"
-#~ msgstr "Please log in"
+msgid "Аудіо"
+msgstr "Audio"
 
-#~ msgid "Щоб отримати доступ ви повинні увійти до системи"
-#~ msgstr "You must log in to gain access"
+msgid "Зберегти"
+msgstr "Save"
 
-#~ msgid "Ще не зареєстровані?"
-#~ msgstr "Not registered yet?"
+msgid "Редагувати"
+msgstr "Edit"
 
-#~ msgid "Створіть акаунт щоб розпочати:"
-#~ msgstr "Create an account to get started:"
+msgid "Видалити"
+msgstr "Delete"
 
-#~ msgid "Читати далі"
-#~ msgstr "Read more"
+msgid "Видалити запис"
+msgstr "Delete entry"
 
-#~ msgid "прокоментував(ла)"
-#~ msgstr "commented"
+msgid "Ви впевнені, що хочете видалити цей запис?"
+msgstr "Are you sure you want to delete this entry?"
 
-#~ msgid "відповів(ла)"
-#~ msgstr "replied"
+msgid "Скасувати"
+msgstr "Cancel"
 
-#~ msgid "Відповісти"
-#~ msgstr "Reply"
+msgid "Назад"
+msgstr "Back"
 
-#~ msgid "Додати коментар"
-#~ msgstr "Add a comment"
+msgid "Створити"
+msgstr "Create"
 
-#~ msgid "Створити нову гілку форуму"
-#~ msgstr "Create a new forum thread"
+msgid "Детальніше"
+msgstr "More details"
 
-#~ msgid "Створити гілку"
-#~ msgstr "Create thread"
+msgid "Read More"
+msgstr "Read more"
 
-#~ msgid "Напишіть відповідь…"
-#~ msgstr "Write a reply…"
+# Collections
+msgid "Підборки книг"
+msgstr "Book collections"
 
-#~ msgid "На форумі немає гілок."
-#~ msgstr "No threads in the forum."
+msgid "Створити нову добірку"
+msgstr "Create new collection"
 
-#~ msgid "Створіть першу гілку!"
-#~ msgstr "Create the first thread!"
+msgid "Назад до списку добірок"
+msgstr "Back to collections list"
+
+# Marketing
+msgid "Read with"
+msgstr "Read with"
+
+msgid "Веди читацький щоденник разом з нами"
+msgstr "Keep a reading journal with us"
+
+msgid "About Us"
+msgstr "About us"
+
+msgid "ABOUT LIBRIUA"
+msgstr "ABOUT LIBRIUA"
+
+msgid "LibriUA — сайт, що дозволяє зануритися у захоплюючий світ літературних подорожей"
+msgstr "LibriUA is a website that allows you to immerse yourself in the exciting world of literary journeys."
+
+msgid "LibriUA — додаток, що дозволяє не лише залишати яскраві враження після прочитаного у вигляді рецензій, а й створювати власні тематичні підбірки, відкривати форуми на цікаві теми та відслідковувати свій темп читання. Заходь на сайт і бери участь у подіях, щоб підвищувати свій рівень та отримати титул найактивнішого читача."
+msgstr "LibriUA is an app that allows you to write reviews, create thematic collections, open forums on interesting topics, and track your reading pace. Join events to improve your level and earn the title of the most active reader."
+
+msgid "Наш сайт спрямований на тих, хто має спрагу до читання й хто готовий поділитися своїми враженнями з однодумцями"
+msgstr "Our website is designed for those who have a passion for reading and are ready to share their impressions with like-minded people."
+
+msgid "Будь ласка, використовуйте форму нижче для входу. Якщо у вас ще немає акаунту,"
+msgstr "Please use the form below to log in. If you do not have an account yet,"
+
+msgid "На форумі немає гілок. <a href=\"%(url)s\">Створіть першу гілку!</a>"
+msgstr "There are no threads in the forum. <a href=\"%(url)s\">Create the first thread!</a>"

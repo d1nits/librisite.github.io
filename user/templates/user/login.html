@@ -3,14 +3,16 @@
 {% block title %}{% trans "Вхід" %}{% endblock %}
 
 {% block content %}
-    <h1>{% trans "Вхід" %}</h1>
+    {% if new_user %}
+        {% trans "Раді вас вітати" as welcome_text %}
+        <h1>{{ welcome_text }} {{ new_user.first_name }}!</h1>
+    {% else %}
+        <h1>{% trans "Вхід" %}</h1>
+    {% endif %}
 
     <p>
-        {% blocktrans %}
-        Будь ласка, використовуйте форму нижче для входу.
-        Якщо у вас ще немає акаунту,
-        {% endblocktrans %}
-        <a href="{% url "register" %}">{% trans "зареєструйтесь тут" %}</a>
+        {% trans "Будь ласка, використовуйте форму нижче для входу. Якщо у вас ще немає акаунту," %}
+        <a href="{% url 'register' %}">{% trans "зареєструйтесь тут" %}</a>
     </p>
 
     <form action="." method="post">

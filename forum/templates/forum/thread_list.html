@@ -44,12 +44,11 @@
                     </div>
                 {% endfor %}
             {% else %}
-                {% url 'forum:thread_create' as create_url %}
                 <p>
-                    {% blocktrans with url=create_url %}
-                        На форумі немає гілок.
-                        <a href="{{ url }}">Створіть першу гілку!</a>
-                    {% endblocktrans %}
+                    {% trans "На форумі немає гілок." %}
+                    <a href="{% url 'forum:thread_create' %}">
+                        {% trans "Створіть першу гілку!" %}
+                    </a>
                 </p>
             {% endif %}
         </div>

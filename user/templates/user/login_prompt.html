@@ -1,21 +1,23 @@
 {% load i18n %}
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <title>{% trans "Вхід" %}</title>
-</head>
-<body>
 
-<h1>{% trans "Будь ласка, увійдіть до системи" %}</h1>
-<p>{% trans "Щоб отримати доступ ви повинні увійти до системи" %}</p>
+{% block title %}{% trans "Потрібна авторизація" %}{% endblock %}
 
-<a href="{% url 'login' %}">{% trans "Увійти" %}</a>
+{% block content %}
+<h1>{% trans "Потрібна авторизація" %}</h1>
 
-<h2>{% trans "Ще не зареєстровані?" %}</h2>
-<p>{% trans "Створіть акаунт щоб розпочати:" %}</p>
+<p>
+    {% trans "Щоб продовжити, будь ласка, увійдіть або створіть акаунт." %}
+</p>
 
-<a href="{% url 'register' %}">{% trans "Зареєструватися" %}</a>
+<p>
+    <a href="{% url 'login' %}">
+        {% trans "Увійти" %}
+    </a>
+</p>
 
-</body>
-</html>
+<p>
+    <a href="{% url 'register' %}">
+        {% trans "Зареєструватися" %}
+    </a>
+</p>
+{% endblock %}

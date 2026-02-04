@@ -1,5 +1,4 @@
 # German translations
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -10,10 +9,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-
-
-
 
 msgid "Оберіть мову:"
 msgstr "Sprache auswählen:"
@@ -186,13 +181,16 @@ msgstr "Forenthreads"
 msgid "Створити нову гілку"
 msgstr "Neuen Thread erstellen"
 
-msgid "Будь ласка, використовуйте форму нижче для входу. Якщо у вас ще немає акаунту, зареєструйтесь тут"
-msgstr "Bitte verwenden Sie das untenstehende Formular, um sich anzumelden. Wenn Sie noch kein Konto haben, registrieren Sie sich hier."
+msgid "Будь ласка, використовуйте форму нижче для входу. Якщо у вас ще немає акаунту"
+msgstr "Bitte verwenden Sie das untenstehende Formular, um sich anzumelden. Wenn Sie noch kein Konto haben,"
 
 msgid "зареєструйтесь тут"
 msgstr "hier registrieren"
 
 msgid "Вхід"
+msgstr "Anmelden"
+
+msgid "Увійти"
 msgstr "Anmelden"
 
 msgid "Ваш акаунт було успішно створено"
@@ -227,3 +225,6 @@ msgstr "Lies mit"
 
 msgid "LibriUA — додаток, що дозволяє не лише залишати яскраві враження після прочитаного у вигляді рецензій, а й створювати власні тематичні підбірки, відкривати форуми на цікаві теми та відслідковувати свій темп читання. Заходь на сайт і бери участь у подіях, щоб підвищувати свій рівень та отримати титул найактивнішого читача."
 msgstr "LibriUA ist eine App, mit der du nicht nur deine Leseeindrücke in Form von Rezensionen teilen kannst, sondern auch eigene thematische Sammlungen erstellst, Foren zu spannenden Themen eröffnest und dein Lesetempo verfolgst. Besuche die Website und nimm an Events teil, um dein Niveau zu steigern und den Titel des aktivsten Lesers zu erhalten."
+
+msgid "Read more"
+msgstr "Weiterlesen"
